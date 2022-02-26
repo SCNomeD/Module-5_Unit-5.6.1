@@ -122,7 +122,7 @@ namespace Module_5_Unit_5._6._1
 
             for (int i = 0; i < favcolor.Length; i++)
             {
-                Console.WriteLine("Введите ваш любимый цвет №{0}: ", i + 1);
+               Console.Write("(red/green/cyan/yellow/gray/blue/magenta)\nВведите ваш любимый цвет №{0}: ", i + 1);
                 favcolor[i] = Console.ReadLine();
             }
 
@@ -130,10 +130,9 @@ namespace Module_5_Unit_5._6._1
         }
         static void ShowUser((string Name, string LastName, int Age, string[] Pets, string[] FavColor) ShowUser)
         {
+            Console.WriteLine();
             Console.WriteLine("Ваше имя: {0}", ShowUser.Name);
-
             Console.WriteLine("Ваша фамилия: {0}", ShowUser.LastName);
-
             Console.WriteLine("Ваш возраст: {0}", ShowUser.Age);
 
             Console.Write("Клички ваших питомцев: ");
@@ -151,7 +150,7 @@ namespace Module_5_Unit_5._6._1
 
             Console.WriteLine();
 
-            Console.Write("Ваши любимые цвета (на англ. с маленькой буквы): ");
+            Console.Write("Ваши любимые цвета: ");
             for (int i = 0; i < ShowUser.FavColor.Length; i++)
             {
                 var color = ShowUser.FavColor[i];
