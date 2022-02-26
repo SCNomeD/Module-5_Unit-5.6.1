@@ -74,7 +74,7 @@ namespace Module_5_Unit_5._6._1
 
                 for (int i = 0; i < User.Pets.Length; i++)
                 {
-                    User.Pets[i] = "-";
+                    User.Pets[i] = "у Вас нет питомцев";
                 }
             }
 
