@@ -82,7 +82,7 @@ namespace Module_5_Unit_5._6._1
             int NumColors;
             do
             {
-                Console.Write("Введите число ваших любимых цветов: ");
+                Console.Write("Введите число Ваших любимых цветов: ");
                 ConsoleNumColors = Console.ReadLine();
             }
             while (!CheckNumber(ConsoleNumColors, out NumColors));
@@ -122,7 +122,7 @@ namespace Module_5_Unit_5._6._1
 
             for (int i = 0; i < favcolor.Length; i++)
             {
-               Console.Write("(red/green/cyan/yellow/gray/blue/magenta)\nВведите ваш любимый цвет №{0}: ", i + 1);
+               Console.Write("(red/green/cyan/yellow/gray/blue/magenta)\nВведите Ваш любимый цвет №{0}: ", i + 1);
                 favcolor[i] = Console.ReadLine().ToLower();
             }
 
@@ -135,7 +135,7 @@ namespace Module_5_Unit_5._6._1
             Console.WriteLine("Ваша фамилия: {0}", ShowUser.LastName);
             Console.WriteLine("Ваш возраст: {0}", ShowUser.Age);
 
-            Console.Write("Клички ваших питомцев: ");
+            Console.Write("Клички Ваших питомцев: ");
             for (int i = 0; i < ShowUser.Pets.Length; i++)
             {
                 if (i == ShowUser.Pets.Length - 1)
