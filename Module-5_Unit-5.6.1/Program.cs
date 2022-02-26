@@ -80,6 +80,7 @@ namespace Module_5_Unit_5._6._1
 
             string ConsoleNumColors;
             int NumColors;
+
             do
             {
                 Console.Write("Введите число Ваших любимых цветов: ");
@@ -101,7 +102,9 @@ namespace Module_5_Unit_5._6._1
                     return true;
                 }
             }
+
             correctnum = 0;
+
             return false;
         }
         static string[] GetUserPets(int num)
@@ -149,7 +152,6 @@ namespace Module_5_Unit_5._6._1
             }
 
             Console.WriteLine();
-
             Console.Write("Ваши любимые цвета: ");
             for (int i = 0; i < ShowUser.FavColor.Length; i++)
             {
@@ -196,6 +198,7 @@ namespace Module_5_Unit_5._6._1
                         Console.ForegroundColor = ConsoleColor.Black;
                         break;
                 }
+
                 if (i == ShowUser.FavColor.Length - 1)
                 {
                     Console.Write(ShowUser.FavColor[i] + " ");
