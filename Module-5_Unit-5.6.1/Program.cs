@@ -31,7 +31,7 @@ namespace Module_5_Unit_5._6._1
             do
             {
                 Console.Write("Есть ли у Вас животные? (да/нет) ");
-                switch (Console.ReadLine())
+                switch (Console.ReadLine().ToLower())
                 {
                     case "да":
 
@@ -123,7 +123,7 @@ namespace Module_5_Unit_5._6._1
             for (int i = 0; i < favcolor.Length; i++)
             {
                Console.Write("(red/green/cyan/yellow/gray/blue/magenta)\nВведите ваш любимый цвет №{0}: ", i + 1);
-                favcolor[i] = Console.ReadLine();
+                favcolor[i] = Console.ReadLine().ToLower();
             }
 
             return favcolor;
